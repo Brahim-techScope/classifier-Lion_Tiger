@@ -1,0 +1,104 @@
+h1 {
+    color: rgb(10, 255, 234);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* styles.css */
+/* Style the form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style the form elements */
+.form-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the file input container */
+.file-input-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+/* Style the file input button */
+.file-input-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.file-input-button:hover {
+    background-color: #0056b3;
+}
+.file-input {
+    position: absolute;
+    font-size: 100px;
+    opacity: 0;
+    right: 0;
+    top: 0;
+}
+.submit-button {
+    background-color: #00ff6e;
+    color: #0f0f0f;
+    font-weight: bold;
+    padding: 11.2px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    float: right;
+}
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+.container {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    text-align: center;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img {
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.label {
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
+/* Add responsive styling */
+@media (min-width: 768px) {
+    .image-container {
+        flex-direction: row;
+    }
+
+    .image-container img {
+        margin: 0 10px;
+    }
+}

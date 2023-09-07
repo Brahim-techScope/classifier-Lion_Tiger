@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lion/Tiger Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lion/Tiger Classifier</h1>
+    <div class="form-container">
+        <form method="POST" enctype="multipart/form-data">
+            <div class="file-input-container">
+                <label for="image">Upload an image</label>
+                <div class="file-input-button">Browse</div>
+                <input type="file" name="image" id="image" accept=".jpg, .jpeg, .png" required class="file-input">
+            </div>
+            <input type="submit" value="Upload" class="submit-button">
+        </form>
+    </div><br><br>
+    <div class="container">
+        <div class="image-container">
+            <img src="{{ form.image_path }}" alt="Uploaded Image">
+            <img src="/static/neural-networks.png" alt="neural networks">
+            <div class="label">
+                <p>{{ form.label }}</p>
+            </div>
+        </div>
+    </div>
+       
+</body>
+</html>
