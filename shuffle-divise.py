@@ -5,10 +5,10 @@ import shutil
 input_dir = 'lion_tiger/train/tigers/'
 output_dir = 'lion_tiger/test/tigers/'
 
-per = 0.2
+percentage = 0.2
 li = os.listdir(input_dir)
 n = len(li)
-p = int(0.2 * n)
+p = int(percentage * n)
 s = set()
 
 # Generate random indices to select files for moving
